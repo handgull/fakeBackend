@@ -1,0 +1,20 @@
+{
+  "name": "fakebackend",
+  "version": "1.0.0",
+  "description": "a fakebackend really useful for mocking RESTful APIs",
+  "main": "fakeBackend.js",
+  "scripts": {
+    "nodemon": "nodemon",
+    "start": "npx ./node_modules/nodemon/bin/nodemon.js"
+  },
+  "author": "handgull",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-server": "^0.16.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
