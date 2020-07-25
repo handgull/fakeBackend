@@ -9,6 +9,7 @@ server.use(jsonServer.defaults());
 
 server.use(function (req, res, next) {
   // converte ogni metodo in una GET
+  req.url = '/' + req.method.toLowerCase() + req.url;
   req.method = 'GET';
   // req.query = req.body // mette il payload nei query params
   next();
@@ -27,6 +28,7 @@ server.get('/authentication', function (req, res) {
   res.json({ token: token });
 });
 */
-server.use('/', jsonServer.router('db/root.json'));
+server.use('/get', jsonServer.router('db/root/get.json'));
+server.use('/post', jsonServer.router('db/root/post.json'));
 
 server.listen(3000);
