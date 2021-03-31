@@ -31,4 +31,4 @@ server.get('/authentication', function (req, res) {
 server.use('/get', jsonServer.router('db/root/get.json'));
 server.use('/post', jsonServer.router('db/root/post.json'));
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);

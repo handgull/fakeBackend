@@ -10,6 +10,8 @@ node fakeBackend.js # avvio senza demone che aggiorna il server
 nodemon fakeBackend.js # avvia e resta in ascolto di modifiche al file
 # NOTA: nodemon va installato tramite npm sulla propria macchina:
 npm install -g nodemon
+
+export PORT=<port>; npm start # per avviare su una porta custom
 ```
 ## Caratteristiche del mio server
 Il mio server node legge il metodo della richiesta e aggiunge il metodo al path della richiesta.
